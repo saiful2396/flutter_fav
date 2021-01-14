@@ -6,30 +6,30 @@ class ProductProvider with ChangeNotifier{
   List<Product> _items = [
     Product(
       id: 'p1',
-      title: 'Water Proof Door Bell',
+      title: 'Electric Guitar',
       description: 'Water Proof Door Bell Water Proof Door Bell',
       price: 29.99,
       oldPrice: 40.0,
       imgUrl:
-      'http://luxury.dewantechnology.com/assets/images/product/1607921353.jpg',
+      'https://cdn.pixabay.com/photo/2017/11/07/00/22/guitar-2925282__340.jpg',
     ),
     Product(
       id: 'p2',
-      title: 'Gang 1 Way Switch',
+      title: 'Electric Lamp',
       description: 'Gang 1 Way Switch Gang 1 Way Switch',
       price: 40.99,
       oldPrice: 59.99,
       imgUrl:
-      'http://luxury.dewantechnology.com/assets/images/product/1607921410.jpg',
+      'https://cdn.pixabay.com/photo/2016/11/23/13/56/light-1853025_960_720.jpg',
     ),
     Product(
       id: 'p3',
-      title: '56 inch Gold Fan',
+      title: 'Iron',
       description: '56 inch Gold Fan 56 inch Gold Fan',
       price: 19.99,
       oldPrice: 35.0,
       imgUrl:
-      'http://luxury.dewantechnology.com/assets/images/product/1607921410.jpg',
+      'https://cdn.pixabay.com/photo/2013/07/18/15/08/ironing-164672_960_720.jpg',
     ),
     Product(
       id: 'p4',
@@ -38,16 +38,16 @@ class ProductProvider with ChangeNotifier{
       price: 35.99,
       oldPrice: 40.0,
       imgUrl:
-      'http://luxury.dewantechnology.com/assets/images/product/1607921357.jpg',
+      'https://cdn.pixabay.com/photo/2016/03/30/12/23/room-heater-1290546_960_720.jpg',
     ),
     Product(
       id: 'p5',
-      title: 'Water Proof Door Bell',
-      description: 'Water Proof Door Bell Water Proof Door Bell',
+      title: 'Camera lens',
+      description: 'Camera lens with great power',
       price: 35.99,
       oldPrice: 40.0,
       imgUrl:
-      'http://luxury.dewantechnology.com/assets/images/product/1607921349.JPG',
+      'https://cdn.pixabay.com/photo/2016/02/19/11/37/lens-1209823_960_720.jpg',
     ),
     Product(
       id: 'p6',

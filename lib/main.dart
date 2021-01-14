@@ -4,7 +4,6 @@ import 'package:flutter_fav/screen_view/home.dart';
 import 'package:flutter_fav/screen_view/product_details.dart';
 import 'package:provider/provider.dart';
 
-import './screen_view/product_overview.dart';
 
 void main() {
   runApp(MyApp());

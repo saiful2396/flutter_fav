@@ -14,27 +14,30 @@ class ProductItem extends StatelessWidget {
         Navigator.of(context)
             .pushNamed(ProductDetails.routeName, arguments: product.id);
       },
-      child: GridTile(
-        child: Image.network(
-          product.imgUrl,
-          fit: BoxFit.cover,
-        ),
-        footer: GridTileBar(
-          backgroundColor: Colors.black54,
-          leading: IconButton(
-            icon: Icon(
-                product.isFavourite || productProvider.isFavorite(product)
-                    ? Icons.favorite
-                    : Icons.favorite_border),
-            onPressed: () {
-              product.toggleFavorite();
-              productProvider.isFavorite(product)
-                  ? productProvider.removeFavorite(product)
-                  : productProvider.addFavorite(product);
-            },
-            color: Theme.of(context).accentColor,
+      child: Card(
+        elevation: 5,
+        margin: const EdgeInsets.all(5),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+        child: Container(
+          padding: EdgeInsets.only(top: 8, left: 8, right: 8),
+          child: Stack(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: FadeInImage(
+                  placeholder: AssetImage('assets/images/fan.png'),
+                  image: NetworkImage(product.imgUrl),
+                  height: MediaQuery.of(context).size.height *0.22,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Positioned(
+                bottom: 4,
+                child: Text('৳ ${product.price.toStringAsFixed(1)}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
+              )
+            ],
           ),
-          title: Text(product.title),
         ),
       ),
     );
